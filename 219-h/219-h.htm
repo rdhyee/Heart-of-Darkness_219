@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="us-ascii"?>
+<?xml version="1.0" encoding="UTF-8"?> <!--changed to UTF-8 -->
 
-<!DOCTYPE html
-   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<!DOCTYPE html > <!--changed to HTML 5-->
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
+  <head> <!--everything in head should be in OPF or linked CSS -->
     <title>
       Heart of Darkness, by Joseph Conrad
     </title>
@@ -18,8 +16,8 @@
     .foot { margin-left: 20%; margin-right: 20%; text-align: justify; text-indent: -3em; font-size: 90%; }
     blockquote {font-size: 97%; font-style: italic; margin-left: 10%; margin-right: 10%;}
     .mynote    {background-color: #DDE; color: #000; padding: .5em; margin-left: 10%; margin-right: 10%; font-family: sans-serif; font-size: 95%;}
-    .toc       { margin-left: 10%; margin-bottom: .75em;}
-    .toc2      { margin-left: 20%;}
+    .toc       { margin-left: 50%; margin-bottom: .75em; list-style-type: none;} <!-- changed margin def so corresponds with lists, added list definition -->
+    .toc2      { margin-left: 70%; list-style-type: none;} <!-- changed margin def so corresponds with lists, added list definition -->
     div.fig { display:block; margin:0 auto; text-align:center; }
     .figleft   {float: left; margin-left: 0%; margin-right: 1%;}
     .figright  {float: right; margin-right: 0%; margin-left: 1%;}
@@ -31,7 +29,8 @@
 </style>
   </head>
   <body>
-<pre xml:space="preserve">
+    <section> <!-- added section tag, this should be a separate HTML file -->
+<pre xml:space="preserve"> 
 
 The Project Gutenberg EBook of Heart of Darkness, by Joseph Conrad
 
@@ -41,7 +40,7 @@ re-use it under the terms of the Project Gutenberg License included
 with this eBook or online at www.gutenberg.org
 
 
-Title: Heart of Darkness
+Title: Heart of Darkness <!-- this and below elements should be captured in OPF-->
 
 Author: Joseph Conrad
 
@@ -64,6 +63,10 @@ Produced by Judith Boss and David Widger
 
 
 </pre>
+    </section>
+    
+    
+    <section epub:type="titlepage"> <!--added section and inflection-->
     <p>
       <br /><br />
     </p>
@@ -83,30 +86,39 @@ Produced by Judith Boss and David Widger
     <p>
       <br /> <br />
     </p>
-    <h3>
+    </section>
+    
+    <!--for EPUB, begin new HTML file-->
+    <nav epub:type="toc">  <!--changed table to nav for accessibility. This will be the EPUB Nav doc-->
+    <h2>
       Contents
-    </h3>
-     <table summary="" style="margin-right: auto; margin-left: auto">
+    </h2>
+      <!-- <table summary="" style="margin-right: auto; margin-left: auto">
       <tr>
-        <td>
-          <p class="toc">
+        <td> -->
+          <li class="toc" type="none"> <!-- list items link to chapter titles -->
             <a href="#link2H_4_0001"> I </a>
-          </p>
-          <p class="toc">
-            <a href="#link2H_4_0002"> II </a>
-          </p>
-          <p class="toc">
-            <a href="#link2H_4_0003"> III </a>
-          </p>
-        </td>
+          </li>
+      <li class="toc" type="none">
+            <a href="#link2H_4_0002" type="none"> II </a>
+          </li>
+      <li class="toc" type="none">
+            <a href="#link2H_4_0003" type="none"> III </a>
+          </li>
+      <!--   </td>
       </tr>
-    </table>
+    </table> -->
+    </nav>  
     <p>
       <br /> <br />
     </p>
     <hr />
+    <section epub:type="chapter"> <!-- added section and inflection. In EPUB this would be <body> -->
     <p>
-      <br /> <br /> <a name="link2H_4_0001" id="link2H_4_0001">
+      <br /> <br />
+      
+      
+      <a name="link2H_4_0001" id="link2H_4_0001"> 
       <!--  H2 anchor --> </a>
     </p>
     <h2>
@@ -811,7 +823,7 @@ Produced by Judith Boss and David Widger
       "Everything else in the station was in a muddle&mdash;heads, things,
       buildings. Strings of dusty niggers with splay feet arrived and departed;
       a stream of manufactured goods, rubbishy cottons, beads, and brass-wire
-      set into the depths of darkness, and in return came a precious trickle of
+      sent into the depths of darkness, and in return came a precious trickle of
       ivory.
     </p>
     <p>
@@ -1394,6 +1406,8 @@ Produced by Judith Boss and David Widger
       with moral ideas of some sort, would climb to the top after all and how he
       would set about his work when there."
     </p>
+    </section>
+    <section epub:type="chapter"> <!-- added section and inflection -->
     <p>
       <a name="link2H_4_0002" id="link2H_4_0002">
       <!--  H2 anchor --> </a>
@@ -2434,6 +2448,8 @@ Produced by Judith Boss and David Widger
       enlarged my mind.' He opened his arms wide, staring at me with his little
       blue eyes that were perfectly round."
     </p>
+    </section>
+    <section epub:type="chapter"> <!-- added section and inflection -->
     <p>
       <a name="link2H_4_0003" id="link2H_4_0003">
       <!--  H2 anchor --> </a>
@@ -3569,26 +3585,27 @@ Produced by Judith Boss and David Widger
     <p>
       <br /><br /><br /><br />
     </p>
+    </section>
 <pre xml:space="preserve">
 
 
 
+<section epub:type="appendix"> <!-- added section and appendix. In EPUB, new HTML file -->
+<section>
+  <p>End of the Project Gutenberg EBook of Heart of Darkness, by Joseph Conrad</p>
 
+<p>*** END OF THIS PROJECT GUTENBERG EBOOK HEART OF DARKNESS ***</p>
 
-End of the Project Gutenberg EBook of Heart of Darkness, by Joseph Conrad
+<p>***** This file should be named 219-h.htm or 219-h.zip *****</p>
+<p>This and all associated files of various formats will be found in:
+       <a href= "http://www.gutenberg.org/2/1/219/">http://www.gutenberg.org/2/1/219/</a></p> <!-- added href -->
 
-*** END OF THIS PROJECT GUTENBERG EBOOK HEART OF DARKNESS ***
+<p>Produced by Judith Boss and David Widger</p>
 
-***** This file should be named 219-h.htm or 219-h.zip *****
-This and all associated files of various formats will be found in:
-        http://www.gutenberg.org/2/1/219/
+<p>Updated editions will replace the previous one--the old editions
+will be renamed.</p>
 
-Produced by Judith Boss and David Widger
-
-Updated editions will replace the previous one--the old editions
-will be renamed.
-
-Creating the works from public domain print editions means that no
+<p>Creating the works from public domain print editions means that no
 one owns a United States copyright in these works, so the Foundation
 (and you!) can copy and distribute it in the United States without
 permission and without paying copyright royalties.  Special rules,
@@ -3603,25 +3620,25 @@ such as creation of derivative works, reports, performances and
 research.  They may be modified and printed and given away--you may do
 practically ANYTHING with public domain eBooks.  Redistribution is
 subject to the trademark license, especially commercial
-redistribution.
+redistribution.</p>
+</section>
 
 
+<section>
+<h2>*** START: FULL LICENSE ***</h2>
 
-*** START: FULL LICENSE ***
+<h3>THE FULL PROJECT GUTENBERG LICENSE PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK</h3>
 
-THE FULL PROJECT GUTENBERG LICENSE
-PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
-
-To protect the Project Gutenberg-tm mission of promoting the free
+<p>To protect the Project Gutenberg-tm mission of promoting the free
 distribution of electronic works, by using or distributing this work
 (or any other work associated in any way with the phrase "Project
 Gutenberg"), you agree to comply with all the terms of the Full Project
 Gutenberg-tm License (available with this file or online at
-http://gutenberg.org/license).
+<a href = "http://gutenberg.org/license">http://gutenberg.org/license</a>).</p><!-- added href -->
 
 
-Section 1.  General Terms of Use and Redistributing Project Gutenberg-tm
-electronic works
+<p>Section 1.  General Terms of Use and Redistributing Project Gutenberg-tm
+electronic works</p>
 
 1.A.  By reading or using any part of this Project Gutenberg-tm
 electronic work, you indicate that you have read, understand, agree to
@@ -3910,7 +3927,7 @@ outside the United States.  U.S. laws alone swamp our small staff.
 Please check the Project Gutenberg Web pages for current donation
 methods and addresses.  Donations are accepted in a number of other
 ways including checks, online payments and credit card donations.
-To donate, please visit: http://pglaf.org/donate
+To donate, please visit: <a href= "http://pglaf.org/donate">http://pglaf.org/donate</a> <!-- added href -->
 
 
 Section 5.  General Information About Project Gutenberg-tm electronic
@@ -3930,14 +3947,15 @@ keep eBooks in compliance with any particular paper edition.
 
 Most people start at our Web site which has the main PG search facility:
 
-     http://www.gutenberg.org
+ <a href="http://www.gutenberg.org">http://www.gutenberg.org</a> <!-- added href -->
 
 This Web site includes information about Project Gutenberg-tm,
 including how to make donations to the Project Gutenberg Literary
 Archive Foundation, how to help produce our new eBooks, and how to
 subscribe to our email newsletter to hear about new eBooks.
-
+</section>
 
 </pre>
+</section>
   </body>
 </html>
