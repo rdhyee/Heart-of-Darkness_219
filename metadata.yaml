@@ -3,7 +3,7 @@ creator:
   author:
     agent_name: Conrad, Joseph
     aliases:
-    - "Korzeniowski, J\xF3zef Konrad Teodor"
+    - Korzeniowski, Józef Konrad Teodor
     - Korzeniowski, Jozef Konrad Teodor
     - Korzeniowski, Joseph Conrad Theodore
     birthdate: 1857
@@ -24,12 +24,12 @@ publisher: Project Gutenberg
 rights: Public domain in the USA.
 rights_url: http://creativecommons.org/about/pdm
 subjects:
-- '!lcsh:Psychological fiction'
-- '!lcsh:Degeneration -- fiction'
-- '!lcsh:Europeans -- Africa -- Fiction'
-- '!lcsh:Africa -- Fiction'
 - '!lcsh:Imperialism -- Fiction'
-- '!lcsh:Trading posts -- Fiction'
 - '!lcc:PR'
+- '!lcsh:Degeneration -- fiction'
+- '!lcsh:Africa -- Fiction'
+- '!lcsh:Psychological fiction'
+- '!lcsh:Europeans -- Africa -- Fiction'
+- '!lcsh:Trading posts -- Fiction'
 title: Heart of Darkness
 url: http://www.gutenberg.org/ebooks/219
