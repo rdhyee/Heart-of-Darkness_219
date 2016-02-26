@@ -1,5 +1,5 @@
 _repo: Heart-of-Darkness_219
-_version: 0.0.2
+_version: 0.1.0
 covers:
 - attribution: Louise Norman, 2015
   cover_type: original
@@ -39,5 +39,6 @@ subjects:
 - '!lcsh: Imperialism -- Fiction'
 - '!lcc: PR'
 - '!lcsh: Trading posts -- Fiction'
+- GITenberg
 title: Heart of Darkness
 url: http://www.gutenberg.org/ebooks/219
